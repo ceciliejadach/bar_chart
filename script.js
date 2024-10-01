@@ -1,11 +1,11 @@
 const list = document.querySelector("ul");
 const valueArr = [];
 
-// Start setInterval der opdaterer hver sekund
+//Interval der opdaterer hvert sekund
 setInterval(generateBars, 1000);
 
 function generateBars() {
-  const randomNum = Math.floor(Math.random() * 101); // Generer et tilfældigt tal mellem 0 og 100
+  const randomNum = Math.floor(Math.random() * 100); // Generer et tilfældigt tal mellem 0 og 100
 
   if (valueArr.length >= 20) {
     valueArr.shift(); // Fjern den ældste værdi, hvis der er mere end 20
